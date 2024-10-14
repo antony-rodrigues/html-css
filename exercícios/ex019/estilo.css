@@ -1,0 +1,57 @@
+* {
+    font-family: Arial, Helvetica, sans-serif
+    /* 
+    Medidas Absolutas
+    cm, mm, in, px, pt, pc
+
+    Medidas Relativas
+    em	->	relativo ao tamanho natural da fonte
+	ex	->	relativo a altura x da fonte
+	rem	->	tipo em, mas relativo a fonte configurada no body
+	vw	->	relativo a largura da view port
+	vh	->	relativo a altura da view port
+	%	->	porcentagem
+    16px geralmente = 1em
+
+    
+@tiago.sampa_
+há 1 ano
+ LEMBRE-SE
+
+Medidas Absolutas: 
+
+	cm, mm, in, px, pt, pc
+
+Medidas Relativas:
+            
+	em	->	relativo ao tamanho natural da fonte
+	ex	->	relativo a altura x da fonte
+	rem	->	tipo em, mas relativo a fonte configurada no body
+	vw	->	relativo a largura da view port
+	vh	->	relativo a altura da view port
+	%	->	porcentagem
+
+    Recomendação w3c:  "px" ou "em"
+
+    Altura padrão:  16px ou 1em
+    */
+}
+
+body {
+    font-size: 16px;
+    /* font-weight: normal;
+    font-style: italic;
+    text-decoration: underline; */
+    font-family: 'work Sans', sans-serif;
+    /* lighter, normal, bold, bolder */
+}
+
+h1, h2 {
+    /* font-family: 'work Sans', Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic; */
+    /* shorthand/font 
+    - font-style -> font-weight -> font-size -> font-family*/
+    font: italic bolder 3em 'work Sans', sans-serif;
+}

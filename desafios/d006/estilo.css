@@ -1,0 +1,14 @@
+body {
+    background-color: #C0CFFA;
+}
+
+section {
+    background-color: white;
+    padding: auto;
+    width: 500px;
+    height: auto;
+    box-shadow: 4px 6px 6px black;
+}
+div#lista_de_tag{
+    color: rgb(0, 0, 0);
+}

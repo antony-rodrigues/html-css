@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            width: auto;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(105, 105, 105);
+            padding: 5px;
+            box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.477);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {  
+            width: auto;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px 9px 0px black;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(149, 149, 149);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- O cabeçalho, onde geralmente se colocam o título do site e a barra de navegação. -->
+        <h1>Meu site</h1>
+        <!-- Título principal do site. -->
+    
+        <nav>
+            <!-- A barra de navegação, que contém links para outras páginas ou seções do site. -->
+            <a href="#">Link</a>
+            <!-- Link de navegação. O atributo 'href' define o destino do link (no caso, o "#" é um link vazio). -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- A área principal do conteúdo do site. -->
+    
+        <section id="assuntos">
+            <!-- Uma seção que agrupa conteúdo relacionado. O atributo 'id' define um identificador único. -->
+            <p>Esportes Política Tecnologia</p>
+            <!-- Parágrafo com uma lista de temas. -->
+        </section>
+    
+        <section id="noticias">
+            <!-- Outra seção com conteúdo específico, neste caso, notícias. -->
+            <article>
+                <!-- Um artigo, representando um conteúdo independente dentro de uma seção. -->
+                <h2>Noticias sobre o Brasil</h2>
+                <!-- Título do artigo. -->
+    
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+                <!-- Um parágrafo com texto de exemplo (placeholder). -->
+    
+                <aside>
+                    <!-- Um conteúdo relacionado ao artigo, geralmente usado para notas adicionais ou laterais. -->
+                    <p>Artigo escrito por José da Silva</p>
+                    <!-- Um parágrafo dentro do <aside>. -->
+                </aside>
+            </article>
+    
+            <article>
+                <!-- Outro artigo dentro da seção 'noticias'. Atualmente está vazio. -->
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- O rodapé da página, geralmente contendo informações como autor, direitos autorais, etc. -->
+        <p>Desenvolvido por Antony R.</p>
+        <!-- Parágrafo com uma mensagem de rodapé. -->
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
