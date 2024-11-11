@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Define o conjunto de caracteres da página como UTF-8 para suporte a caracteres especiais -->
     <meta charset="UTF-8">
+    <!-- Configura a página para uma boa exibição em dispositivos móveis, ajustando a escala inicial -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Define o título que aparece na aba do navegador -->
+    <title>Fundo fixo de tela</title>
     <style>
-        body{
-            background-color: black;
+        /* Estilização do corpo da página */
+        body {
+            /* Define a altura da área visível como 100% da altura da janela do navegador */
             height: 100vh;
-            background-image: url('imagens/wallpaper002.jpg');
-            background-position: center bottom;
-            background-repeat: repeat-y;
-            background-size: cover;
+            
+            /* Define o fundo da página com várias propriedades em uma única linha */
+            /* Sintaxe: cor, imagem, posição, tamanho, repetição e fixação */
+            background: black url('imagens/wallpaper002.jpg') center center/cover no-repeat fixed;
+            /* 
+               Explicação dos valores usados:
+               - black: cor de fundo preta
+               - url('imagens/wallpaper002.jpg'): caminho da imagem de fundo
+               - center center: alinha a imagem ao centro da página
+               - cover: ajusta a imagem para cobrir toda a área visível, mantendo a proporção
+               - no-repeat: evita repetição da imagem
+               - fixed: fixa a imagem, para que não role com a página 
+            */
         }
-        main{
+
+        /* Estilização do elemento <main>, que contém o conteúdo principal */
+        main {
+            /* Define a cor de fundo do <main> como branco */
             background-color: white;
-            width: 400px;
+            /* Limita a largura máxima do <main> a 400px */
+            max-width: 400px;
+            /* Adiciona 10 pixels de espaço interno em volta do conteúdo */
             padding: 10px;
+            /* Centraliza o <main> horizontalmente */
             margin: auto;
+            /* Define uma borda de 1 pixel, com cor azul escura */
             border: 1px solid darkblue;
+            /* Arredonda os cantos da borda do <main> com raio de 10 pixels */
             border-radius: 10px;
         }
     </style>
 </head>
 <body>
+    <!-- Conteúdo principal da página, envolto em <main> -->
     <main>
+        <!-- Título de nível 1, grande e destacado -->
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim alias officia laboriosam. Eveniet eum nostrum repellendus omnis quas dolorem nam exercitationem, provident maxime suscipit dolores officia aliquid ab velit maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolor ullam, veritatis temporibus fuga earum, voluptates dolorum omnis qui libero magni. Ipsam asperiores obcaecati commodi necessitatibus quasi culpa minima blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quidem reprehenderit repudiandae ex, dicta ea quae nulla molestiae quos illo perspiciatis nesciunt modi minima nostrum nobis, facilis architecto beatae tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim alias officia laboriosam. Eveniet eum nostrum repellendus omnis quas dolorem nam exercitationem, provident maxime suscipit dolores officia aliquid ab velit maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolor ullam, veritatis temporibus fuga earum, voluptates dolorum omnis qui libero magni. Ipsam asperiores obcaecati commodi necessitatibus quasi culpa minima blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quidem reprehenderit repudiandae ex, dicta ea quae nulla molestiae quos illo perspiciatis nesciunt modi minima nostrum nobis, facilis architecto beatae tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim alias officia laboriosam. Eveniet eum nostrum repellendus omnis quas dolorem nam exercitationem, provident maxime suscipit dolores officia aliquid ab velit maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolor ullam, veritatis temporibus fuga earum, voluptates dolorum omnis qui libero magni. Ipsam asperiores obcaecati commodi necessitatibus quasi culpa minima blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quidem reprehenderit repudiandae ex, dicta ea quae nulla molestiae quos illo perspiciatis nesciunt modi minima nostrum nobis, facilis architecto beatae tempora.</p>
+        
+        <!-- Parágrafo de texto de exemplo -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim alias officia laboriosam. Eveniet eum nostrum repellendus omnis quas dolorem nam exercitationem, provident maxime suscipit dolores officia aliquid ab velit maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolor ullam, veritatis temporibus fuga earum, voluptates dolorum omnis qui libero magni. Ipsam asperiores obcaecati commodi necessitatibus quasi culpa minima blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quidem reprehenderit repudiandae ex, dicta ea quae nulla molestiae quos illo perspiciatis nesciunt modi minima nostrum nobis, facilis architecto beatae tempora.</p>
     </main>
 </body>
 </html>
