@@ -1,0 +1,126 @@
+@charset "UTF-8"; /* Define o padrão de codificação como UTF-8 para suportar caracteres especiais. */
+
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/* Variáveis globais para fontes */
+:root {
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif; /* Fonte padrão para o site */
+    --fonte02: "Crimson Text", serif; /* Fonte estilizada para textos destacados */
+    --fonte03: "Special Elite", system-ui; /* Fonte temática (tipo máquina de escrever) */
+}
+
+/* Reseta margens e paddings padrão de todos os elementos */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Estilo base do body */
+body {
+    min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da viewport */
+    background-color: lightgray; /* Fundo cinza claro */
+    font-family: var(--fonte01); /* Fonte padrão definida no root */
+}
+
+/* Estilo do header */
+header {
+    background-color: #C1440E; /* Fundo vermelho-terra */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+header > h1 {
+    font-family: var(--fonte02); /* Fonte estilizada (serifada) */
+    font-variant: small-caps; /* Converte texto para letras maiúsculas pequenas */
+    font-weight: bolder; /* Texto mais pesado para destaque */
+    font-size: calc(12vh + 2vw); /* Tamanho adaptativo ao viewport */
+    padding-top: 50px; /* Espaço superior */
+}
+
+header > p {
+    font-size: calc(4vh + 1vw); /* Texto menor adaptativo */
+    padding-top: 10px; /* Espaço superior */
+    padding-bottom: 50px; /* Espaço inferior */
+}
+
+/* Estilo geral para links */
+a {
+    text-decoration: none; /* Remove sublinhado */
+}
+
+a.autor {
+    color: white; /* Cor branca para links específicos */
+}
+
+a.autor:hover {
+    background-color: #a33b0f; /* Fundo mais escuro ao passar o mouse */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px; /* Adiciona espaçamento interno */
+    transition-duration: 0.3s; /* Animação suave ao passar o mouse */
+}
+
+/* Estilo geral de seções */
+section {
+    padding-left: 40px; /* Espaçamento à esquerda */
+    padding-top: 10vh; /* Espaçamento superior proporcional ao viewport */
+    padding-bottom: 10vh; /* Espaçamento inferior proporcional ao viewport */
+}
+
+/* Parágrafos em seções */
+section > p {
+    font-size: calc(2.5vw + 1vh); /* Tamanho adaptativo ao viewport */
+    line-height: 1.8; /* Espaçamento entre linhas para melhor leitura */
+    max-width: 800px; /* Limita a largura máxima do texto */
+    text-align: justify; /* Alinha o texto de forma justificada */
+}
+
+/* Estilo para textos normais */
+.normal {
+    color: black; /* Texto preto */
+}
+
+/* Parágrafos específicos dentro de seções com imagens */
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.502); /* Fundo semi-transparente preto */
+    padding: 10px; /* Espaçamento interno */
+    color: white; /* Texto branco */
+    display: inline-block; /* Mantém os parágrafos ajustados ao conteúdo */
+}
+
+/* Seção com ID nordeste */
+section#nordeste {
+    background-image: url('../imagens/img01.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Faz a imagem ocupar toda a área */
+    background-position: right top; /* Alinha imagem ao canto superior direito */
+    background-attachment: fixed; /* Mantém o fundo fixo ao rolar a página */
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.501); /* Sombra interna para escurecer as bordas */
+}
+
+/* Seção com ID chuva */
+section#chuva {
+    background-image: url('../imagens/img02.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Faz a imagem ocupar toda a área */
+    background-position: center bottom; /* Alinha imagem ao centro inferior */
+    background-attachment: fixed; /* Fundo fixo ao rolar a página */
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.501); /* Sombra interna para escurecer as bordas */
+}
+
+/* Estilo do footer */
+footer {
+    background-color: black; /* Fundo preto */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Links específicos dentro do footer */
+a.minhapessoa {
+    color: white; /* Cor branca */
+    font-weight: bolder; /* Texto mais pesado */
+}
+
+a.minhapessoa:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
